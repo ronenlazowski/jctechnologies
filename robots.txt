@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://jctechnologies.org/sitemap.xml
+
+# Disallow unnecessary files
+Disallow: /styles.css
+Disallow: /script.js
+
+# Allow important pages
+Allow: /index.html
+Allow: /contact.html
+Allow: /sla.html
+Allow: /favicon.ico

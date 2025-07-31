@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://formspree.io https://cdn.jsdelivr.net https://unpkg.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net;
+        font-src 'self' https://fonts.gstatic.com data:;
+        img-src 'self' data: https: blob:;
+        media-src 'self' data: https:;
+        object-src 'none';
+        frame-src 'self' https://formspree.io;
+        connect-src 'self' https://formspree.io https://api.formspree.io wss: https:;
+        form-action 'self' https://formspree.io;
+        base-uri 'self';
+        upgrade-insecure-requests;
+        block-all-mixed-content;
+    ">
+    
+    <!-- SEO Meta Tags -->
+    <title>JC Technologies - Professional IT Services & Network Solutions | Connecticut</title>
+    <meta name="description" content="JC Technologies provides professional IT services, network configuration, hardware installation, and on-site support for businesses and homes in Connecticut. Get expert IT solutions with 99.9% uptime guarantee.">
+    <meta name="keywords" content="IT services Connecticut, network configuration, hardware installation, on-site IT support, managed IT services, cybersecurity, business IT solutions, home networking, router setup, firewall configuration, manchester, network monitoring, IT consulting, professional IT services">
+    <meta name="author" content="John Cohen, JC Technologies">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="geo.region" content="US-CT">
+    <meta name="geo.placename" content="Connecticut">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="JC Technologies - Professional IT Services & Network Solutions">
+    <meta property="og:description" content="Expert IT services including network configuration, hardware installation, and on-site support. Serving businesses and homes in Connecticut with 15+ years experience.">
+    <meta property="og:image" content="https://jctechnologies.org/og-image.jpg">
+    <meta property="og:url" content="https://jctechnologies.org">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="JC Technologies">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jctechnologies.org">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data - Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "JC Technologies",
+        "description": "Professional IT services, network configuration, hardware installation, and on-site support for businesses and homes.",
+        "url": "https://jctechnologies.org",
+        "telephone": "(860) 471-2599",
+        "email": "support@jctechnologies.org",
+        "founder": {
+            "@type": "Person",
+            "name": "John Cohen",
+            "jobTitle": "Owner & Network Engineer",
+            "url": "https://www.linkedin.com/in/john-cohen97"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "CT",
+            "addressCountry": "US"
+        },
+        "areaServed": {
+            "@type": "State",
+            "name": "Connecticut"
+        },
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": "41.6032",
+                "longitude": "-73.0877"
+            },
+            "geoRadius": "50000"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "IT Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Network Configuration and Installation",
+                        "description": "Professional network setup and configuration services including router & switch configuration, VLAN setup, firewall configuration, and network hardware installation."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Managed IT Services",
+                        "description": "Monitored and maintained IT support including remote support, proactive solutions, and network monitoring."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "On-Site Support",
+                        "description": "Professional on-site technical support including emergency troubleshooting, system maintenance, and hardware repair.",
+                        "offers": {
+                            "@type": "Offer",
+                            "priceSpecification": {
+                                "@type": "PriceSpecification",
+                                "price": "125",
+                                "priceCurrency": "USD",
+                                "unitCode": "HUR"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "50",
+            "bestRating": "5"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/john-cohen97",
+            "https://www.ronenlaz.com"
+        ]
+    }
+    </script>
+    
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "JC Technologies",
+        "url": "https://jctechnologies.org",
+        "logo": "https://jctechnologies.org/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "(860) 471-2599",
+            "email": "support@jctechnologies.org",
+            "contactType": "customer service",
+            "areaServed": "US",
+            "availableLanguage": "English"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "John Cohen"
+        },
+        "foundingDate": "2012",
+        "numberOfEmployees": "1-10"
+    }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="#home" class="logo">JC Technologies</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/sla">Service Level Agreement</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">Premium IT Services</span>
+                </div>
+                <h1>Next-Generation <span class="highlight">IT Solutions</span></h1>
+                <p class="hero-description">Empowering businesses with cutting-edge technology, robust security, and scalable infrastructure that adapts to your growing needs.</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Uptime Guarantee</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Expert Support</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#services" class="btn btn-primary">
+                        <span class="btn-text">Start Your Project</span>
+                    </a>
+                    <a href="/contact" class="btn btn-outline">
+                        <span class="btn-text">Free Consultation</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section why-different">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Why Choose Us</span>
+                    <h2 class="section-title">Transforming Business Through Technology</h2>
+                    <p class="section-subtitle">We combine innovation with reliability to deliver IT solutions that drive real business results and competitive advantages.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-content">
+                            <div class="feature-header">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1Z" stroke="currentColor" stroke-width="2"/>
+                                        <polyline points="9,12 11,14 15,10" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <span class="feature-badge">Security First</span>
+                            </div>
+                            <h3>Enterprise-Grade Security</h3>
+                            <p>Advanced threat protection, compliance frameworks, and zero-trust architecture to safeguard your digital assets.</p>
+                        </div>
+                        <div class="feature-actions">
+                            <a href="/contact" class="btn btn-small btn-outline">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-content">
+                            <div class="feature-header">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M8 14s1.5 2 4 2 4-2 4-2" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="9" y1="9" x2="9.01" y2="9" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="15" y1="9" x2="15.01" y2="9" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <span class="feature-badge">Reliable</span>
+                            </div>
+                            <h3>99.9% Uptime Promise</h3>
+                            <p>Proactive monitoring, redundant systems, and rapid response protocols ensure your business never stops.</p>
+                        </div>
+                        <div class="feature-actions">
+                            <a href="/sla" class="btn btn-small btn-outline">View SLA</a>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-content">
+                            <div class="feature-header">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 21V19C20 16.7909 18.2091 15 16 15H8C5.79086 15 4 16.7909 4 19V21" stroke="currentColor" stroke-width="2"/>
+                                        <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M16 3.13A4 4 0 0 1 16 11.87" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M8 3.13A4 4 0 0 0 8 11.87" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <span class="feature-badge">Expert Team</span>
+                            </div>
+                            <h3>Certified Professionals</h3>
+                            <p>Industry-certified experts with deep knowledge in enterprise technologies and best practices.</p>
+                        </div>
+                        <div class="feature-actions">
+                            <a href="/contact" class="btn btn-small btn-outline">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <div class="section-header">
+                            <span class="section-badge">About JC Technologies</span>
+                            <h2 class="section-title">Innovating IT Solutions Since 2012</h2>
+                        </div>
+                        <p class="about-description">We're a forward-thinking IT services company that bridges the gap between cutting-edge technology and practical business solutions. Our mission is to empower organizations with robust, scalable, and secure technology infrastructure.</p>
+                        
+                        <div class="expertise-grid">
+                            <div class="expertise-item">
+                                <span class="expertise-icon">NET</span>
+                                <div class="expertise-content">
+                                    <h4>Network Installation</h4>
+                                    <p>Modern and efficient network setups</p>
+                                </div>
+                            </div>
+                            <div class="expertise-item">
+                                <span class="expertise-icon">HOME</span>
+                                <div class="expertise-content">
+                                    <h4>Home Networking</h4>
+                                    <p>Reliable home network setups</p>
+                                </div>
+                            </div>
+                            <div class="expertise-item">
+                                <span class="expertise-icon">SEC</span>
+                                <div class="expertise-content">
+                                    <h4>Cybersecurity</h4>
+                                    <p>Advanced threat protection</p>
+                                </div>
+                            </div>
+                            <div class="expertise-item">
+                                <span class="expertise-icon">PERF</span>
+                                <div class="expertise-content">
+                                    <h4>Performance Optimization</h4>
+                                    <p>System efficiency enhancement</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-actions">
+                            <a href="/contact" class="btn btn-primary">
+                                <span class="btn-text">Partner With Us</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="team-card">
+                            <div class="team-header">
+                                <div class="team-avatar">
+                                    <span class="avatar-text">JC</span>
+                                    <div class="avatar-badge">✓</div>
+                                </div>
+                                <div class="team-info">
+                                    <h3>John Cohen</h3>
+                                    <div class="team-badges">
+                                        <span class="badge">CompTIA Certified</span>
+                                        <span class="badge">Network Engineer</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="team-stats">
+                                <div class="stat-row">
+                                    <div class="stat">
+                                        <span class="stat-value">1,200+</span>
+                                        <span class="stat-label">Projects Completed</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">15+</span>
+                                        <span class="stat-label">Years Experience</span>
+                                    </div>
+                                </div>
+                                <div class="stat-row">
+                                    <div class="stat">
+                                        <span class="stat-value">98%</span>
+                                        <span class="stat-label">Client Satisfaction</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">50+</span>
+                                        <span class="stat-label">Enterprise Clients</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="team-actions">
+                                <a href="/contact" class="btn btn-small btn-outline">Contact John</a>
+                                <a href="https://www.linkedin.com/in/john-cohen97" class="btn btn-small btn-ghost" target="_blank">LinkedIn Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="owner-section">
+            <div class="container">
+                <div class="owner-content">
+                    <div class="section-header">
+                        <span class="section-badge">Meet the Owner</span>
+                        <h2 class="section-title">Dedicated to Your Success</h2>
+                    </div>
+                    
+                    <div class="owner-story">
+                        <p>As an ambitious tech freelancer, John loves creating innovative solutions. He started his career at different companies, gaining experience and improving his skills. He later chose to start his own business and gained a reputation as a skilled expert who has handled a variety of tech challenges effectively.</p>
+                    </div>
+                    
+                    <div class="consulting-info">
+                        <h3>IT Consulting</h3>
+                        <p>We are committed to helping small and medium size businesses thrive with smart, cost-effective technology solutions. Our success comes from truly understanding our clients' technology needs, implementing cutting-edge solutions, and ensuring IT costs remain manageable for your home or business.</p>
+                        
+                        <h4>We collaborate closely with our clients to:</h4>
+                        <ul class="collaboration-list">
+                            <li>Identify and recommend IT solutions that align with business goals, streamline operations, and reduce cost.</li>
+                            <li>Assist in selection essential hardware and software, offering insight into security, usability, and implementation strategies.</li>
+                            <li>Stay ahead of emerging and existing technologies that could impact system performance, security, and efficiency.</li>
+                        </ul>
+                        
+                        <p>JC Technologies works with businesses across multiple industries and sizes, understanding that no two organizations have the same IT support needs. That's why we offer flexible, customizable service plans tailored to each company's unique requirements—whether that means specific response times, risk management strategies, or extended support hours.</p>
+                        
+                        <p>We're always open to discussing the best solutions and crafting a personalized IT support plan that fits each client's business model and objectives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Our Services</span>
+                    <h2 class="section-title">Comprehensive IT Solutions</h2>
+                    <p class="section-subtitle">From network configuration to hardware installation, we provide end-to-end technology services that scale with your business.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card featured">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <span class="service-badge">Most Popular</span>
+                        </div>
+                        <h3>Network Configuration and Installation</h3>
+                        <p>Professional network setup and configuration services to optimize your home and business connectivity performance.</p>
+                        <ul class="service-features">
+                            <li>Router & switch configuration</li>
+                            <li>VLAN setup and management</li>
+                            <li>Firewall configuration</li>
+                            <li>Network hardware installation</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price">Inquire for Pricing</span>
+                        </div>
+                        <div class="service-actions">
+                            <a href="/contact" class="btn btn-primary btn-full">
+                                <span class="btn-text">Get Started</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="8" cy="8" r="1" fill="currentColor"/>
+                                    <circle cx="12" cy="8" r="1" fill="currentColor"/>
+                                    <circle cx="16" cy="8" r="1" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>Managed IT Services</h3>
+                        <p>Monitored and maintained IT support for your home and business.</p>
+                        <ul class="service-features">
+                            <li>Remote support</li>
+                            <li>Reactive and proactive solutions</li>
+                            <li>Network and server monitoring</li>
+                            <li>Network rack setup</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price">Inquire for Pricing</span>
+                        </div>
+                        <div class="service-actions">
+                            <a href="/contact" class="btn btn-primary btn-full">
+                                <span class="btn-text">Get Started</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 21V19C20 16.7909 18.2091 15 16 15H8C5.79086 15 4 16.7909 4 19V21" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M8 12L16 12" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 8L12 16" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3>On-Site Support</h3>
+                        <p>Professional on-site technical support to resolve issues quickly and keep your home and business running smoothly.</p>
+                        <ul class="service-features">
+                            <li>Emergency troubleshooting</li>
+                            <li>System maintenance visits</li>
+                            <li>Hardware repair & replacement</li>
+                            <li>Staff training & guidance</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price">Starting at $125/hour</span>
+                        </div>
+                        <div class="service-actions">
+                            <a href="/contact" class="btn btn-primary btn-full">
+                                <span class="btn-text">Get Started</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>JC Technologies</h3>
+                    <p>Professional IT solutions and network services for homes and businesses.</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <div class="nav-column">
+                        <h4>Services</h4>
+                        <a href="#services">Network Setup</a>
+                        <a href="#services">Hardware Install</a>
+                        <a href="#services">On-Site Support</a>
+                    </div>
+                    
+                    <div class="nav-column">
+                        <h4>Company</h4>
+                        <a href="#about">About</a>
+                        <a href="/sla">SLA</a>
+                        <a href="/contact">Contact</a>
+                    </div>
+                    
+                    <div class="nav-column">
+                        <h4>Software Consultant</h4>
+                        <a href="https://www.ronenlaz.com" target="_blank">www.ronenlaz.com ↗</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 JC Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
